@@ -1,0 +1,49 @@
+{
+  "LOG": {
+    "LOG_PATH": "./Log",
+    "DEBUG": {
+      "format_str": "%(asctime)s | %(levelname)-8s | %(filename)-20s | %(lineno)4d | %(message)s",
+        "path_name": "MeerkatsDebug",
+      "stream": "False"
+    },
+    "INFO": {
+      "format_str":  "MeerkatsInfo | %(asctime)s | %(levelname)-8s | %(filename)-20s | %(lineno)4d | %(message)s",
+      "path_name": "MeerkatsInfo",
+      "stream": "True"
+    },
+    "Meerkats": {
+      "format_str": "Meerkats | %(asctime)s | %(levelname)-8s |%(message)s",
+      "path_name": "Meerkats",
+      "stream": "True"
+    },
+    "DataMeerkats": {
+      "format_str": "DataMeerkats | %(asctime)s | %(levelname)-8s |%(message)s",
+      "path_name": "DataMeerkats",
+      "stream": "True"
+    },
+    "ControlMeerkats": {
+      "format_str": "ControlMeerkats | %(asctime)s | %(levelname)-8s |%(message)s",
+      "path_name": "ControlMeerkats",
+      "stream": "True"
+    },
+    "FileMeerkats": {
+      "format_str": "FileMeerkats | %(asctime)s | %(levelname)-8s |%(message)s",
+      "path_name": "FileMeerkats",
+      "stream": "True"
+    }
+  },
+  "PROCESS":{
+    "DATA":2,
+    "CONTROL":2,
+    "FILE":2
+  },
+  "PORT":8787,
+  "REDIS":{
+    "endpoint":"127.0.0.1"
+  },
+  "ENDPOINT":{
+    "FILE":["115.68.221.40", 8888],
+    "CONTROL":["115.68.221.40", 8888],
+    "DATA":["115.68.221.40", 8888]
+  }
+}
